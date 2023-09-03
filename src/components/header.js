@@ -1,12 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
-
+import '../App.css';
+import Dropdown1 from './dropdown1';
+import Dropdown2 from './dropdown2';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     return (
-      <div class="bg-gray-900">
+      <div class="bg-gray-900" >
         <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a
@@ -23,43 +25,25 @@ export const Header = () => {
               </span>
             </a>
             <ul class="flex items-center hidden space-x-8 lg:flex">
-              <li>
-                <a
-                  href="/"
-                  aria-label="Our product"
-                  title="Our product"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                >
+              <li id='li'>
+              <a
+                href="/"
+                class="font-medium tracking-wide text-[#fcfcfc] transition-colors duration-200 hover:text-[#db4b09]"
+                          >
                 Home
                 </a>
               </li>
-              <li>
-                <a
-                  href="/"
-                  aria-label="Our product"
-                  title="Our product"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                >
-                  Information
-                </a>
+              <li >
+              <Dropdown1 />
               </li>
               <li>
-                <a
-                  href="/"
-                  aria-label="Product pricing"
-                  title="Product pricing"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                >
-                  Learning center
-                </a>
+              <Dropdown2 />
               </li>
-              <li>
-                <a
-                  href="/"
-                  aria-label="About us"
-                  title="About us"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                >
+              <li id='contact'>
+              <a
+                href="/"
+                class="font-medium tracking-wide text-[#fcfcfc] transition-colors duration-200 "
+                          >
                  Contact Us
                 </a>
               </li>
@@ -124,41 +108,33 @@ export const Header = () => {
                     </div>
                     <nav>
                       <ul class="space-y-4">
-                        <li>
-                          <a
+                        <li id='li'>
+                        <a
                             href="/"
-                            aria-label="Our product"
-                            title="Our product"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-[#db4b09]"
                           >
                             Home
                           </a>
                         </li>
-                        <li>
-                          <a
+                        <li id='li'>
+                        <a
                             href="/"
-                            aria-label="Our product"
-                            title="Our product"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-[#db4b09]"
                           >
                            Information
                           </a>
                         </li>
-                        <li>
+                        <li id='li'>
                           <a
                             href="/"
-                            aria-label="Product pricing"
-                            title="Product pricing"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-[#db4b09]"
                           >
                             Learning center
                           </a>
                         </li>
-                        <li>
+                        <li id='contact'>
                           <a
                             href="/"
-                            aria-label="About us"
-                            title="About us"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Contact Us

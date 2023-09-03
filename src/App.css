@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+#contact{
+ background-color: #db4b09;
+ padding: 7px;
+ border-radius: 10px;
+}
+#contact:hover{
+  background-color: #fe5000;
+}
+#li:hover{
+  color: #fe5000;
+}
