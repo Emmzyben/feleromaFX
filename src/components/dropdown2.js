@@ -20,17 +20,16 @@ export const Dropdown2 = () => {
     >
       <button
         id="dropdownDefaultButton"
-        className="font-medium tracking-wide text-[#fcfcfc] transition-colors duration-200 hover:text-[#db4b09]" 
+        className="font-medium tracking-wide text-[#fcfcfc] transition-colors duration-200 hover:text-[#db4b09]"
         type="button"
       >
         Learning center
-        
       </button>
 
       {isDropdownOpen && (
         <div
           id="dropdown"
-          className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute mt-2"
+          className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow absolute left-0 mt-0 dark:bg-gray-700"
           onMouseEnter={openDropdown}
           onMouseLeave={closeDropdown}
         >
@@ -42,6 +41,7 @@ export const Dropdown2 = () => {
               <a
                 href="#"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                onClick={closeDropdown}
               >
                 Deriv
               </a>
@@ -50,11 +50,11 @@ export const Dropdown2 = () => {
               <a
                 href="#"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                onClick={closeDropdown}
               >
                 Boom and Crash
               </a>
             </li>
-            
           </ul>
         </div>
       )}

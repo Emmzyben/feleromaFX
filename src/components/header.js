@@ -4,6 +4,7 @@ import '../App.css';
 import Dropdown1 from './dropdown1';
 import Dropdown2 from './dropdown2';
 
+
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
@@ -37,7 +38,7 @@ export const Header = () => {
               <Dropdown1 />
               </li>
               <li>
-              <Dropdown2 />
+              <Dropdown2/>
               </li>
               <li id='contact'>
               <a
