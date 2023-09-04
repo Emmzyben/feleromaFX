@@ -47,3 +47,30 @@
 #li:hover{
   color: #fe5000;
 }
+#video{
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+#upper{
+  position: absolute;
+  top: 14%;
+  color: white;
+  z-index: 1;
+  background-color: #151a2169;
+  height: 665px;
+  width: 100%;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+#smaller{
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+#wider{
+  display: none;
+}
+#smaller{
+  display: block;
+}
+}
